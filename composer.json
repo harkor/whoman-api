@@ -2,6 +2,19 @@
     "name": "harkor/whoman-api",
     "description": "Super-simple, minimum abstraction Whoman API v2",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Charlin SRL",
+            "email": "bonjour@charlin.be",
+            "homepage": "https://www.charlin.be"
+        },
+        {
+            "name": "Julien Winant",
+            "email": "julien@charlin.be",
+            "homepage": "https://harkor.be"
+        }
+    ],
+    "keywords": ["whoman", "whise"],
     "require": {
         "curl/curl": "^2.3"
     },
