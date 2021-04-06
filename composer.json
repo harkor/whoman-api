@@ -11,7 +11,8 @@
         {
             "name": "Julien Winant",
             "email": "julien@charlin.be",
-            "homepage": "https://harkor.be"
+            "homepage": "https://harkor.be",
+            "role": "Developer"
         }
     ],
     "keywords": ["whoman", "whise"],
