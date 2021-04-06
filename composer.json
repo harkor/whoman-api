@@ -1,6 +1,7 @@
 {
     "name": "harkor/whoman-api",
     "description": "Super-simple, minimum abstraction Whoman API v2",
+    "license": "MIT",
     "require": {
         "curl/curl": "^2.3"
     },
