@@ -1,7 +1,11 @@
 {
+    "name": "harkor/whoman-api",
+    "description": "Super-simple, minimum abstraction Whoman API v2",
     "require": {
-        "vlucas/phpdotenv": "^5.3",
         "curl/curl": "^2.3"
+    },
+    "require-dev": {
+        "vlucas/phpdotenv": "^5.3"
     },
     "autoload": {
         "psr-4": {
