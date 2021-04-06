@@ -10,11 +10,14 @@
     protected $_pagination;
     protected $_details;
 
+    public $request;
+
     function __construct(Client $Client){
 
       parent::__construct($Client);
 
       $this->_pagination = new Pagination;
+      $this->request = new \stdClass;
 
       $this->pagination()->setItemsPerPage(9);
       $this->pagination()->setCurrentPage(0);
@@ -49,6 +52,8 @@
       elseif(is_array($this->getDetails())):
         $data['SubDetailIdList'] = $this->getDetails();
       endif;
+
+      $data = array_merge($data, (array) $this->request);
 
       $this->setData($data);
       
