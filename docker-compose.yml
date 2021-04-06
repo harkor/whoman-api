@@ -1,0 +1,14 @@
+version: '3'
+services:
+    web:
+        image: charlin-wordpress:7.4.1-apache
+        volumes:
+            - ./:/var/www/html
+        labels:
+            - "traefik.http.routers.${PROJECT_NAME}.rule=Host(`${PROJECT_DOMAIN}`)"
+        networks:
+            - traefik_webgateway
+
+networks:
+    traefik_webgateway:
+        external: true

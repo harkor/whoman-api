@@ -1,0 +1,4 @@
+docker-composer.yml
+vendor
+composer.lock
+.env
