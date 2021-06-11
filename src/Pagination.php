@@ -58,14 +58,14 @@
 
     public function hasPrev(){
 
-      $result = $this->_current_page > 1;
+      $result = $this->_current_page > 0;
       return $result;
 
     }
 
     public function hasNext(){
 
-      $result = ceil( $this->getNumberOfItems() / $this->getItemsPerPage() ) > $this->getCurrentPage();
+      $result = ceil( $this->getNumberOfItems() / $this->getItemsPerPage() ) > ($this->getCurrentPage()+1);
       return $result;
 
     }

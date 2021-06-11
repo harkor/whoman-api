@@ -3,7 +3,7 @@
 namespace Whoman;
 
 class Contact extends Whoman {
-    
+
   protected $_method = 'UpdateContact';
   protected $_varname = 'estateServiceUpdateContactRequest';
 
